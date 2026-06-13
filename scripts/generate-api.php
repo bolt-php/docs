@@ -18,7 +18,7 @@ $github = [
 ];
 
 $workingDir = __DIR__ . '/../temp';
-$docsDir = __DIR__ . '/../api-reference';
+$docsDir = __DIR__ . '/../docs/api-reference';
 
 if (!is_dir($workingDir)) {
     mkdir($workingDir, 0777, true);
@@ -36,7 +36,7 @@ foreach ($packages as $packageName => $folderName) {
     // 1. Download/Update package
     if (!is_dir($packagePath)) {
         echo "Downloading $packageName...\n";
-        shell_exec("composer create-project --no-interaction --prefer-dist $packageName $packagePath");
+        shell_exec("composer create-project --no-interaction $packageName $packagePath");
     } else {
         echo "Updating $packageName...\n";
         shell_exec("composer update --working-dir=$packagePath --no-interaction");
