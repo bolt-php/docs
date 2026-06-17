@@ -14,6 +14,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Tutorial', link: '/docs/getting-started/installation' },
+      { text: 'Modules', link: '/modules' },
       { text: 'API Reference', link: '/docs/api-reference/' },
       { text: 'About', link: '/about' },
       { text: 'Gallery', link: '/gallery' },

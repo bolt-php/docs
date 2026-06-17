@@ -7,11 +7,11 @@ export default [
                 "link": "/docs/api-reference/index"
             },
             {
-                "text": "tinyframework/core",
+                "text": "bolt-php/core",
                 "link": "/docs/api-reference/core/index"
             },
             {
-                "text": "tinyframework/web-app",
+                "text": "bolt-php/web",
                 "link": "/docs/api-reference/web/index"
             }
         ]
@@ -87,8 +87,20 @@ export default [
                 "link": "/docs/api-reference/core/framework/db/commands/BaseCommand"
             },
             {
+                "text": "ColumnDefinition",
+                "link": "/docs/api-reference/core/framework/db/commands/ColumnDefinition"
+            },
+            {
+                "text": "CreateTableCommand",
+                "link": "/docs/api-reference/core/framework/db/commands/CreateTableCommand"
+            },
+            {
                 "text": "DeleteCommand",
                 "link": "/docs/api-reference/core/framework/db/commands/DeleteCommand"
+            },
+            {
+                "text": "DropTableCommand",
+                "link": "/docs/api-reference/core/framework/db/commands/DropTableCommand"
             },
             {
                 "text": "InsertCommand",
@@ -97,6 +109,14 @@ export default [
             {
                 "text": "SelectCommand",
                 "link": "/docs/api-reference/core/framework/db/commands/SelectCommand"
+            },
+            {
+                "text": "TableExistsCommand",
+                "link": "/docs/api-reference/core/framework/db/commands/TableExistsCommand"
+            },
+            {
+                "text": "TransactionCommand",
+                "link": "/docs/api-reference/core/framework/db/commands/TransactionCommand"
             },
             {
                 "text": "UpdateCommand",
@@ -123,6 +143,14 @@ export default [
             {
                 "text": "MySqlResult",
                 "link": "/docs/api-reference/core/framework/db/drivers/MySqlResult"
+            },
+            {
+                "text": "SqliteDriver",
+                "link": "/docs/api-reference/core/framework/db/drivers/SqliteDriver"
+            },
+            {
+                "text": "SqliteResult",
+                "link": "/docs/api-reference/core/framework/db/drivers/SqliteResult"
             }
         ]
     },
@@ -189,6 +217,10 @@ export default [
             {
                 "text": "BeforeSave",
                 "link": "/docs/api-reference/core/framework/models/interfaces/BeforeSave"
+            },
+            {
+                "text": "TypeTransformer",
+                "link": "/docs/api-reference/core/framework/models/interfaces/TypeTransformer"
             }
         ]
     },
@@ -199,6 +231,16 @@ export default [
             {
                 "text": "Model",
                 "link": "/docs/api-reference/core/framework/models/Model"
+            }
+        ]
+    },
+    {
+        "text": "framework\\models\\transformers",
+        "collapsed": true,
+        "items": [
+            {
+                "text": "DateTimeTransformer",
+                "link": "/docs/api-reference/core/framework/models/transformers/DateTimeTransformer"
             }
         ]
     },
@@ -273,6 +315,24 @@ export default [
             {
                 "text": "NotFoundException",
                 "link": "/docs/api-reference/web/framework/web/exceptions/NotFoundException"
+            }
+        ]
+    },
+    {
+        "text": "framework\\web\\models\\validators",
+        "collapsed": true,
+        "items": [
+            {
+                "text": "Extension",
+                "link": "/docs/api-reference/web/framework/web/models/validators/Extension"
+            },
+            {
+                "text": "Image",
+                "link": "/docs/api-reference/web/framework/web/models/validators/Image"
+            },
+            {
+                "text": "Size",
+                "link": "/docs/api-reference/web/framework/web/models/validators/Size"
             }
         ]
     },
